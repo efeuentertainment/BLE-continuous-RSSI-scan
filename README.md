@@ -5,7 +5,7 @@ Standalone feature for a continious RSSI capture of a specified MAC address devi
 the code relies on the module "@abandonware/noble" https://github.com/abandonware/noble   
 tested on Raspberry Pi3A+
 
-### Install:
+### Installation on a Raspberry Pi:
 1) download BLE-continious-RSSI-scan
 
 2) Install @abandonware/noble and its dependencies   
