@@ -1,0 +1,7 @@
+node_modules/
+smooth.js
+discovery.js
+filter.js
+filter_const.js*
+updateRSSI.js
+battery.js
