@@ -7,7 +7,7 @@ let peripheralIdOrAddress = "e6:4e:57:09:74:e4".toLowerCase(); //for debug
 //1. make sure bluetooth is enabled in /boot/config.txt . should look like this:
 //  #dtoverlay=pi3-disable-bt
 //  (bluetooth uses UART for communication)
-//2. sudo systemctl enable hciuart.service
+//2. sudo systemctl enable hciuart.service and reboot
 //if those requirements are not met, any usage of noble will throw an error
 
 if (peripheralIdOrAddress === 0) {
