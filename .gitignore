@@ -1,7 +1,7 @@
 node_modules/
 smooth.js
-discovery.js
+discover.js
 filter.js
 filter_const.js*
-updateRSSI.js
+updaterssi.js
 battery.js
