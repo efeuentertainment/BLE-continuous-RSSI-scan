@@ -30,6 +30,6 @@ node discover.js
 to find your BLE device's MAC
 ("discoverOnce.js" is a lighly modified example from @abandonware/noble )
 
-2) run
-node index.js <BLEMAC>
+2) run    
+node index.js BLEMAC   
 to continuously output your device's RSSI
