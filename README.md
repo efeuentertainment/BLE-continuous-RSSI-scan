@@ -8,12 +8,10 @@ tested on Raspberry Pi3A+
 ### Install:
 1) download BLE-continious-RSSI-scan
 
-2) Install @abandonware/noble dependencies   
+2) Install @abandonware/noble and its dependencies   
 ```javascript
 sudo apt-get install bluetooth bluez libbluetooth-dev libudev-dev
 ```
-
-3) 
 ```javascript
 npm install @abandonware/noble
 ```
@@ -23,7 +21,7 @@ npm install @abandonware/noble
 ```
 (bluetooth uses UART for communication)
 
-5) 
+5) enable the required service
 ```bash
 sudo systemctl enable hciuart.service
 ```
@@ -31,16 +29,16 @@ sudo systemctl enable hciuart.service
 
 if those requirements are not met, any usage of noble will throw an error
 
-### usage:
-1) run   
-```bash
-node discover.js   
-```
-to find your BLE device's MAC   
-("discoverOnce.js" is a lighly modified example from @abandonware/noble )
-
-2) run   
+### Usage:
 ```bash
 node index.js BLEMAC   
 ```
 to continuously output your device's RSSI
+
+you can use:   
+```bash
+node discoverOnce.js   
+```
+to find your BLE device's MAC   
+("discoverOnce.js" is a lighly modified example from @abandonware/noble )
+
